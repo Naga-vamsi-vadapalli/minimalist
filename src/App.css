@@ -1,0 +1,164 @@
+.background {
+  height: 500px;
+  width: 100%;
+  color: white;
+  background-image: url('./background.jpg'); /* Ensure this path is correct */
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  position: relative; /* Positioning context for the header */
+}
+
+.header {
+  height: 80px;
+  width: 100%;
+  color: white;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute; /* Position it on top of the background */
+  top: 0;
+  left: 0;
+  border-bottom: 2px solid orangered; /* Adds an orangered border */
+  box-sizing: border-box; /* Ensures the border is included in the element's total width and height */
+}
+
+.text-field {
+  position: absolute; /* Positions the text field absolutely */
+  bottom: 0; /* Positions it at the bottom */
+  left: 0; /* Positions it at the left */
+  padding: 20px; /* Adds some padding */
+  width: 100%; /* Ensures it takes the full width of the parent */
+  box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+.heading1 {
+  color: white;
+  text-align: left;
+}
+
+.button-view {
+  color: orangered;
+  align-self: flex-end; /* Aligns button to the bottom-right corner */
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: white;
+  border: 1px solid orangered;
+  cursor: pointer;
+  margin-top: 10px; /* Adds space above the button */
+}
+
+.text-field-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.About {
+  display: flex;
+  align-items: center; /* Align items vertically centered */
+  justify-content: space-around; /* Space items evenly with equal space around them */
+  gap: 20px; /* Add some space between the elements */
+  padding: 20px; /* Optional: Add some padding */
+  h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 36px; /* Adjust as needed */
+    color:orangered;
+    text-shadow: 2px 2px 5px orange; /* Adds an orange shadow */
+    /* Ad orangejust color as needed */
+  }
+}
+
+
+
+.image {
+  width: 40%; 
+  /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+.para{
+  text-align: center;
+  padding: 40px;
+  font-size: 24px;
+  font-style:normal;
+  h2{
+    font-weight: bold;
+  }
+  
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px; /* Add some space between the boxes */
+  padding: 20px;
+}
+
+.product-box {
+  min-width: 584px;
+  min-height: 530px;
+  border: 2px solid grey;
+  
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.product-box .content {
+  flex-grow: 1; /* Ensure content expands to fill remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  text-align: center; /* Center text horizontally */
+}
+.product-box img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  
+}
+
+
+.button-view1 {
+  color: white;
+  align-self: flex-end; /* Aligns button to the bottom-right corner */
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: orangered;
+  border: 1px solid orangered;
+  cursor: pointer;
+  margin-top: 10px; /* Adds space above the button */
+}
+
+.img-container {
+  width: 100%; /* Ensure the container spans the entire width */
+  max-width: 100%; /* Ensure the container does not exceed its parent's width */
+  overflow: hidden; /* Prevent image overflow */
+}
+
+.img-container img {
+  width: 100%; /* Make the image fill the entire width of its container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any extra space below the image */
+}
+.modal{
+  display: flex;
+  flex-direction: row;
+}
+.modal-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  text-align: center;
+
+  hr{
+    color: orange;
+    height: 10px;
+  }
+
+}
